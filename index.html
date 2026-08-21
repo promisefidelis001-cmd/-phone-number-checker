@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NumberCheck | Phone Number Checker</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>◉</span> NumberCheck
+    </div>
+
+    <div class="status">
+      ● Online
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="badge">
+        ⚡ FAST & SIMPLE
+      </div>
+
+      <h1>
+        Check a phone number<br>
+        <span>in seconds.</span>
+      </h1>
+
+      <p>
+        Validate phone numbers and discover useful information
+        such as country, carrier, location and line type.
+      </p>
+
+    </section>
+
+
+    <section class="checker-card">
+
+      <label for="phone">
+        Phone Number
+      </label>
+
+      <div class="input-wrapper">
+        <input
+          type="tel"
+          id="phone"
+          placeholder="+234 801 234 5678"
+          autocomplete="tel"
+        >
+
+        <button id="checkButton">
+          Check
+        </button>
+      </div>
+
+      <p class="hint">
+        Example: +234 801 234 5678
+      </p>
+
+
+      <div id="message" class="message"></div>
+
+
+      <div id="results" class="results hidden">
+
+        <div class="results-header">
+          <h2>Number Information</h2>
+          <span class="verified">✓ Checked</span>
+        </div>
+
+        <div class="result-grid">
+
+          <div class="result-box">
+            <small>Country</small>
+            <strong id="country">—</strong>
+          </div>
+
+          <div class="result-box">
+            <small>Location</small>
+            <strong id="location">—</strong>
+          </div>
+
+          <div class="result-box">
+            <small>Carrier</small>
+            <strong id="carrier">—</strong>
+          </div>
+
+          <div class="result-box">
+            <small>Line Type</small>
+            <strong id="lineType">—</strong>
+          </div>
+
+          <div class="result-box full">
+            <small>Number</small>
+            <strong id="number">—</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="features">
+
+      <div class="feature">
+        <div class="icon">✓</div>
+        <div>
+          <h3>Validation</h3>
+          <p>Check whether a number is valid.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">🌍</div>
+        <div>
+          <h3>Number Details</h3>
+          <p>View available phone information.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">⚡</div>
+        <div>
+          <h3>Fast Results</h3>
+          <p>Get results quickly and easily.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 NumberCheck</p>
+    <p>For legitimate phone-number validation purposes.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
