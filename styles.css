@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, #243b80 0%, transparent 35%),
+    linear-gradient(145deg, #070a14, #11182d);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #6d7cff;
+  margin-right: 7px;
+}
+
+.status {
+  color: #63e6a2;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(100, 115, 255, 0.12);
+  border: 1px solid rgba(120, 130, 255, 0.3);
+  color: #91a0ff;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 8vw, 65px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #7185ff, #b56cff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #9da7c3;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.checker-card {
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.35);
+  backdrop-filter: blur(20px);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 17px;
+  border-radius: 13px;
+  border: 1px solid #303b5e;
+  background: #080d1d;
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #7185ff;
+  box-shadow: 0 0 0 3px rgba(113,133,255,0.12);
+}
+
+button {
+  border: none;
+  border-radius: 13px;
+  padding: 0 25px;
+  background: linear-gradient(135deg, #5c72ff, #865cff);
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.hint {
+  color: #687492;
+  font-size: 12px;
+  margin-top: 9px;
+}
+
+.message {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ff9b9b;
+}
+
+.results {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.results-header h2 {
+  font-size: 20px;
+}
+
+.verified {
+  color: #63e6a2;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.result-box {
+  background: rgba(0,0,0,0.2);
+  padding: 17px;
+  border-radius: 13px;
+}
+
+.result-box.full {
+  grid-column: 1 / -1;
+}
+
+.result-box small {
+  display: block;
+  color: #727e9d;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.result-box strong {
+  font-size: 15px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.feature {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  gap: 13px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.feature h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.feature p {
+  color: #78839e;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #59647f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 650px) {
+
+  main {
+    padding-top: 30px;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  button {
+    height: 52px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-box.full {
+    grid-column: auto;
+  }
+
+  .checker-card {
+    padding: 20px;
+  }
+}
